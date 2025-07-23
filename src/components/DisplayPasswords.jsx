@@ -16,7 +16,13 @@ const DisplayPasswords = () => {
               Password : {item.password}
             </span>
             <button style={{ marginRight: '1rem' }}>Edit</button>
-            <button style={{ marginRight: '1rem' }}> Delete</button>
+            <button
+              style={{ marginRight: '1rem' }}
+              onClick={() => passwordCtx.removePassword(item)}
+            >
+              {' '}
+              Delete
+            </button>
           </div>
         );
       })}

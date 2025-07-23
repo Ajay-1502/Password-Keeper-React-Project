@@ -11,7 +11,7 @@ const InputForm = ({ onClose }) => {
   const formHandler = (e) => {
     e.preventDefault();
     if (title.trim().length > 0 && password.trim().length > 0) {
-      passwordCtx.addPassword(title, password);
+      passwordCtx.addPassword(Math.random(), title, password);
     } else {
       alert('Invalid Input');
     }
