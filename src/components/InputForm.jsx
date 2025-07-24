@@ -15,6 +15,9 @@ const InputForm = ({ onClose }) => {
     } else {
       alert('Invalid Input');
     }
+
+    setTitle('');
+    setPassword('');
   };
 
   return (

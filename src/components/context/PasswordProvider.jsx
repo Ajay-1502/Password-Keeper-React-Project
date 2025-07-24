@@ -13,7 +13,6 @@ const PasswordProvider = (props) => {
 
     setAllPasswords((prev) => {
       const updated = [...prev, { ...passwordDetails }];
-      console.log(updated);
       return updated;
     });
   };
