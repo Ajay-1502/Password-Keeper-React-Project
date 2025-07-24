@@ -15,7 +15,9 @@ const DisplayPasswords = () => {
             <span style={{ marginRight: '1rem' }}>
               Password : {item.password}
             </span>
-            <button style={{ marginRight: '1rem' }}>Edit</button>
+            <button style={{ marginRight: '1rem', marginBottom: '1rem' }}>
+              Edit
+            </button>
             <button
               style={{ marginRight: '1rem' }}
               onClick={() => passwordCtx.removePassword(item)}
